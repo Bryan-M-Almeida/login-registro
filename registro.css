@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg");
+    color: #e0e0e0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.register-container {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.register-container h2 {
+    text-align: center;
+}
+
+.register-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.register-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.register-container a {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    .register-container {
+        padding: 15px;
+    }
+
+    .register-container input,
+    .register-container button {
+        font-size: 14px;
+    }
+}
